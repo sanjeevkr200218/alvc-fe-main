@@ -35,6 +35,7 @@ const Navbar = () => {
         <div className="flex-grow md:flex-grow-0">
           <Link href="/" className="">
             <img
+              fetchpriority="high"
               src="/light-logo.png"
               className="w-20 lg:w-28 h-auto"
               alt="AgileLean logo"
