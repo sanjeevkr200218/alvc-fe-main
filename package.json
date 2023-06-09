@@ -1,0 +1,31 @@
+{
+  "name": "alvc-fe-main-2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/lab": "^5.0.0-alpha.132",
+    "@mui/material": "^5.13.3",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.41.0",
+    "eslint-config-next": "13.4.4",
+    "framer-motion": "^10.12.16",
+    "next": "13.4.4",
+    "nextjs-progressbar": "^0.0.16",
+    "postcss": "8.4.24",
+    "react": "18.2.0",
+    "react-calendly": "^4.1.1",
+    "react-dom": "18.2.0",
+    "react-fast-marquee": "^1.6.0",
+    "react-icons": "^4.9.0",
+    "react-responsive-carousel": "^3.2.23",
+    "tailwindcss": "3.3.2"
+  }
+}
