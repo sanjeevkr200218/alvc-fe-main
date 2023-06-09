@@ -6,6 +6,15 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Studio = () => {
+  const items1 = [
+    "Digitization and Automation",
+    "Visibility and Predictability",
+    "Finding cutting-edge ways",
+    "Security and Transparency",
+    "Security and Transparency",
+    "New Approaches to Digitize and Automate Processes",
+  ];
+
   return (
     <div className="relative w-screen max-w-full">
       <div className="absolute top-[12%] md:top-[9%] lg:top-[6%] bg-white bg-opacity-10 skew-y-12 h-56 w-screen max-w-full" />
@@ -26,7 +35,7 @@ const Studio = () => {
                   alt="tick"
                 />
                 <p
-                  className="h4 text-center font-bold
+                  className="h4 text-center font-semibold
               py-5"
                 >
                   {card.title}
@@ -45,7 +54,7 @@ const Studio = () => {
                   alt="tick"
                 />
                 <p
-                  className="h4 text-center font-bold
+                  className="h4 text-center font-semibold
                py-5"
                 >
                   {card.title}
@@ -59,11 +68,7 @@ const Studio = () => {
        px-6 md:px-0  flex-col md:flex-row xl:flex-row items-center xl:space-x-0 xl:md:space-x-6 xl:xl:space-x-16"
           >
             <div className="order-last pt-10 md:pt-0 2md:order-first xl:order-first">
-              <img
-                src="/Business-Plan.svg"
-                className="image"
-                alt="Personal Opinions"
-              />
+              <img src="/disc.svg" className="image" alt="disc" />
             </div>
             <div className="textcontainer">
               <p className="font2 text-center">
@@ -136,18 +141,47 @@ const Studio = () => {
       flex-col md:flex-row xl:flex-row space-x-0 lg:space-x-20 xl:space-x-20 
       "
           >
-            <div className="textcontainer">
-              <p className="font2 text-center">
-                We keep iterating features to hit Product Market Fit. We
-                continue pushing out one new release each month and have
-                on-demand support for bugs and fixes. We partner with
-                corporations to create a portfolio of diversified ventures in
-                the most cost-efficient way. You bring deep industry knowledge
-                and capital, and we provide the methods, processes, and talent
-                to build future-proof businesses from the ground.
-              </p>
+            <div className="flex flex-col items-center justify-center">
+              <h1 className="h3 font-bold text-center">
+                We are investing time and money at a very early stage into ideas
+                and founders to validate promising opportunities.
+                <br /> Focus areas are (non-exclusive):
+              </h1>
+              <div className="flex flex-col lg:flex-row lg:space-x-20 translate-x-[4%] md:translate-x-[5%] lg:translate-x-[7%] xl:translate-x-[10%] space-y-2 lg:space-y-0 pt-20  items-left justify-center">
+                <div className="flex flex-col space-y-2">
+                  {items1
+                    .map((list, index) => (
+                      <div key={index} className="">
+                        <div className="flex items-center space-x-4">
+                          <img
+                            src="/bullet.svg"
+                            className="w-8 h-8 object-contain"
+                            alt="bullet"
+                          />
+                          <p className="h4">{list}</p>
+                        </div>
+                      </div>
+                    ))
+                    .slice(0, 3)}
+                </div>
+                <div className="flex flex-col space-y-2">
+                  {items1
+                    .map((list, index) => (
+                      <div key={index} className="">
+                        <div className="flex items-center space-x-4">
+                          <img
+                            src="/bullet.svg"
+                            className="w-8 h-8 object-contain"
+                            alt="bullet"
+                          />
+                          <p className="h4">{list}</p>
+                        </div>
+                      </div>
+                    ))
+                    .slice(3)}
+                </div>
+              </div>
             </div>
-            <img src="/Pair-programming.svg" className="image" alt="" />
           </div>
         </div>
       </div>

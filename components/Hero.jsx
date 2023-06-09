@@ -7,13 +7,12 @@ const Hero = () => {
             <div>
               <h1 className="h2 pb-20 font-extrabold font-roboto text-center">
                 Being up-to-date is common;
-                <br /> The competitive advantage is being up-to-tommorrow.
+                <br /> The competitive advantage is being up to-morrow.
               </h1>
             </div>
             <div>
               <p className="h3 text-bold text-center">
-                We are your product engine, from Strategic Insights To Tactical
-                Execution
+                We are your product engine, from Strategy To Execution
               </p>
             </div>
           </div>
